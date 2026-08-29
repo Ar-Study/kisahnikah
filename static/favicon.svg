@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="22" fill="#ffffff" stroke="#ecd093" stroke-width="2"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#ebdcc8" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="50" y="64" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="44" font-weight="bold" fill="#5a3d31" text-anchor="middle">KN</text>
+  <circle cx="70" cy="30" r="9" fill="none" stroke="#c48b71" stroke-width="2.5"/>
+  <circle cx="77" cy="28" r="7" fill="none" stroke="#c5a059" stroke-width="2.5"/>
+</svg>
