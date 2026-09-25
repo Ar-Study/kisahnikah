@@ -103,7 +103,10 @@
 	</header>
 
 	<!-- STANDALONE FULLSCREEN INVITATION VIEW -->
-	<div class="invite-canvas" style="background-color: {currentTemplate.bgColor};">
+	<div
+		class="invite-canvas {['forever-town', 'pixel-game-world'].includes(currentTemplate.id) ? 'is-full-desktop' : ''}"
+		style="background-color: {currentTemplate.bgColor};"
+	>
 		<InvitationView
 			weddingData={activeWeddingData}
 			guestName={guestName}
@@ -250,6 +253,16 @@
 		position: relative;
 		box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 		transition: background-color 0.3s ease;
+	}
+
+	.invite-canvas.is-full-desktop {
+		max-width: 100%;
+		width: 100%;
+		flex: 1 1 0;
+		display: flex;
+		flex-direction: column;
+		min-height: 0;
+		box-shadow: none;
 	}
 
 	.evermomen-badge-bar {

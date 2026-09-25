@@ -206,6 +206,46 @@ export const TEMPLATES = [
 		fontHeading: "'Cormorant Garamond', serif",
 		fontBody: "'Plus Jakarta Sans', sans-serif",
 		previewImage: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=700'
+	},
+	{
+		id: 'forever-town',
+		name: 'Forever Town (Pixel RPG)',
+		tag: 'Interactive Pixel Art & Mini Game',
+		tier: 'vip',
+		isPremium: true,
+		priceLabel: 'VIP Game Edition 🎮',
+		category: 'Retro RPG & Interaktif',
+		badgeIcon: 'bi-controller',
+		desc: 'Undangan pernikahan interaktif bergaya game Pokémon retro 16-bit. Tamu bikin karakter, jalan-jalan di kota piksel, buka cerita kalian, dan bertarung di mini-game teman liar!',
+		primaryColor: '#43634E',
+		secondaryColor: '#B94448',
+		bgColor: '#F8F5E8',
+		textColor: '#303B39',
+		cardBg: 'rgba(255, 253, 242, 0.96)',
+		fontTitle: "'Press Start 2P', monospace",
+		fontHeading: "'Press Start 2P', monospace",
+		fontBody: "'Plus Jakarta Sans', sans-serif",
+		previewImage: '/templates/forever-town/forever-town-desktop.webp'
+	},
+	{
+		id: 'pixel-game-world',
+		name: 'Pixel Game World (Side-Scroller)',
+		tag: '2D Pixel Adventure & 4 Quest Missions',
+		tier: 'vip',
+		isPremium: true,
+		priceLabel: 'VIP Game Edition 🎮',
+		category: 'Retro RPG & Interaktif',
+		badgeIcon: 'bi-joystick',
+		desc: 'Undangan pernikahan interaktif petualangan 2D side-scrolling pixel art. Tamu menelusuri bukit indah, menyelesaikan 4 misi pernikahan, membuka kotak surat, berbicara dengan kru, menyapa kucing & ayam lucu, hingga tiba di panggung pelaminan!',
+		primaryColor: '#5A8D38',
+		secondaryColor: '#9C9151',
+		bgColor: '#87B4E2',
+		textColor: '#2D2D2D',
+		cardBg: 'rgba(255, 255, 255, 0.96)',
+		fontTitle: "'Press Start 2P', monospace",
+		fontHeading: "'Press Start 2P', monospace",
+		fontBody: "'Space Mono', monospace",
+		previewImage: '/templates/pixel-game-world/preview.jpg'
 	}
 ];
 

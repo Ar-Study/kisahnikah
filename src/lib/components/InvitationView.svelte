@@ -1,5 +1,7 @@
 <script>
 	import { TEMPLATES } from '$lib/weddingStore.svelte.js';
+	import ForeverTownView from './ForeverTownView.svelte';
+	import PixelGameWorldView from './PixelGameWorldView.svelte';
 
 	/**
 	 * @type {{
@@ -239,8 +241,13 @@
 	}
 </script>
 
-<div
-	class="invitation-container tpl-{currentTemplate.id} tpl-tier-{currentTemplate.tier || 'free'} {isSimulator ? 'is-simulator' : 'is-fullscreen'}"
+{#if currentTemplate.id === 'forever-town'}
+	<ForeverTownView {weddingData} {guestName} {isSimulator} />
+{:else if currentTemplate.id === 'pixel-game-world'}
+	<PixelGameWorldView {weddingData} {guestName} {isSimulator} />
+{:else}
+	<div
+		class="invitation-container tpl-{currentTemplate.id} tpl-tier-{currentTemplate.tier || 'free'} {isSimulator ? 'is-simulator' : 'is-fullscreen'}"
 	style="
 		--primary: {currentTemplate.primaryColor};
 		--secondary: {currentTemplate.secondaryColor};
@@ -1145,6 +1152,7 @@
 		</div>
 	{/if}
 </div>
+{/if}
 
 <style>
 	/* CSS Variables configured from Theme */
